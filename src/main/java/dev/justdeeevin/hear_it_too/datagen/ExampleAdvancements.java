@@ -1,6 +1,6 @@
-package dev.justdeeevin.hear_it_too.hear_it_too.datagen;
+package dev.justdeeevin.hear_it_too.datagen;
 
-import dev.justdeeevin.hear_it_too.hear_it_too.HearItToo;
+import dev.justdeeevin.hear_it_too.HearItToo;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.resources.Identifier;
@@ -21,8 +21,8 @@ public final class ExampleAdvancements {
 
     public static void generate(Consumer<AdvancementHolder> exporter) {
         AdvancementHolder advancement = Advancement.Builder.advancement()
-            .addCriterion("has_stone", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE))
-            .build(Identifier.parse(STONE_ADVANCEMENT_ID));
+                .addCriterion("has_stone", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE))
+                .build(Identifier.parse(STONE_ADVANCEMENT_ID));
         exporter.accept(advancement);
     }
 }

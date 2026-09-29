@@ -1,4 +1,4 @@
-package dev.justdeeevin.hear_it_too.hear_it_too;
+package dev.justdeeevin.hear_it_too;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,26 +23,28 @@ import net.neoforged.fml.common.Mod;
 /*? if forge {*/
 /*@Mod(HearItToo.MOD_ID)
 *//*?}*/
-public class HearItToo /*? if fabric {*/ implements ModInitializer /*?}*/ {
+public class HearItToo /* ? if fabric { */ implements ModInitializer /* ?} */ {
     public static final String MOD_ID = "hear_it_too";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    /*? if forge {*/
-    /*public HearItToo(FMLJavaModLoadingContext context) {
-        LOGGER.info("Hello Forge world!");
-    }
-    *//*?}*/
+    /* ? if forge { */
+    /*
+     * public HearItToo(FMLJavaModLoadingContext context) {
+     * LOGGER.info("Hello Forge world!");
+     * }
+     *//* ?} */
 
-    /*? if neoforge {*/
-    /*public HearItToo(IEventBus modEventBus) {
-        LOGGER.info("Hello NeoForge world!");
-    }
-    *//*?}*/
+    /* ? if neoforge { */
+    /*
+     * public HearItToo(IEventBus modEventBus) {
+     * LOGGER.info("Hello NeoForge world!");
+     * }
+     *//* ?} */
 
-    /*? if fabric {*/
+    /* ? if fabric { */
     @Override
     public void onInitialize() {
         LOGGER.info("Hello Fabric world!");
     }
-    /*?}*/
+    /* ?} */
 }

@@ -1,7 +1,7 @@
 /*? if fabric {*/
-package dev.justdeeevin.hear_it_too.hear_it_too.datagen.fabric;
+package dev.justdeeevin.hear_it_too.datagen.fabric;
 
-import dev.justdeeevin.hear_it_too.hear_it_too.datagen.ExampleAdvancements;
+import dev.justdeeevin.hear_it_too.datagen.ExampleAdvancements;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -20,19 +20,17 @@ public final class ExampleDataGenerator implements DataGeneratorEntrypoint {
 
     private static final class Advancements extends FabricAdvancementProvider {
         private Advancements(
-            FabricPackOutput output,
-            CompletableFuture<HolderLookup.Provider> registryLookup
-        ) {
+                FabricPackOutput output,
+                CompletableFuture<HolderLookup.Provider> registryLookup) {
             super(output, registryLookup);
         }
 
         @Override
         public void generateAdvancement(
-            HolderLookup.Provider registryLookup,
-            Consumer<AdvancementHolder> exporter
-        ) {
+                HolderLookup.Provider registryLookup,
+                Consumer<AdvancementHolder> exporter) {
             ExampleAdvancements.generate(exporter);
         }
     }
 }
-/*?}*/
+/* ?} */
