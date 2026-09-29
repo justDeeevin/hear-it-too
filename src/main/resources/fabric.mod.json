@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+
+  "name": "${name}",
+  "description": "${description}",
+  "authors": [
+    "Devin Droddy"
+  ],
+  "contact": {
+    "sources": "https://github.com/justdeeevin/hear-it-too"
+  },
+
+  "license": "MIT",
+  "icon": "assets/${id}/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "${group}.${id}.HearItToo"
+    ],
+    "fabric-datagen": [
+      "${group}.${id}.datagen.fabric.ExampleDataGenerator"
+    ]
+  },
+  "depends": {
+    "fabricloader": "*",
+    "fabric-api": ">=${fabricVersion}",
+    "minecraft": ">=${minecraftVersionVirtual}"
+  }
+}

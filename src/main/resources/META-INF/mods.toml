@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "*"
+license = "MIT"
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+displayURL = "https://github.com/justdeeevin/hear-it-too"
+authors = "Devin Droddy"
+description = '''
+${description}
+'''
+logoFile = "assets/${id}/icon.png"
+logoBlur = false
+
+[[dependencies.${id}]]
+modId = "forge"
+mandatory = true
+versionRange = "[${forgeLoaderVersion},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraftVersionVirtual},)"
+ordering = "NONE"
+side = "BOTH"
